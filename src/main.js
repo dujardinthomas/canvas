@@ -60,7 +60,7 @@ function animation() {
 	let x = 0;
 	let y = 0;
 	const image = new Image();
-	image.src = '../images/monster.png';
+	image.src = 'https://dujardinthomas.github.io/canvas/images/monster.png';
 
 	image.addEventListener('load', event => {
 		context.drawImage(image, x, y);
