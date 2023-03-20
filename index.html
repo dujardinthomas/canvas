@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>JSAÉ - TP Canvas</title>
+
+	<link rel="stylesheet" href="css/main.css" />
+	<style>
+		canvas {
+			/* tapez ici votre code CSS */
+			background-color: white;
+			border: 3px dashed #777;
+
+		}
+	</style>
+	<script src="src/main.js" defer></script>
+</head>
+
+<body>
+	<h1><em>JSAÉ</em> / TP1 - Canvas</h1>
+
+	<button id="draw">DESSINER</button>
+	<button id="clear">EFFACER</button>
+
+	<button id="play">JOUER AVEC LE CLAVIER</button>
+	<button id="veille">VEILLE</button>
+	<div class="parametresDraw" hidden>
+		<label for="">largeur</label> <input type="number" name="" id="xTaille" value="20">
+		<label for="">hauteur</label> <input type="number" name="" id="yTaille" value="20">
+		<input type="radio" name="typeForme" id="trait" value="trait" checked>Trait</input>
+		<input type="radio" name="typeForme" id="rectangle" value="rectangle">Rectangle</input>
+		<input type="radio" name="typeForme" id="cercle" value="cercle">Cercle</input>
+	</div>
+
+
+	<canvas class="gameCanvas" width="600" height="400"></canvas>
+</body>
+
+</html>
